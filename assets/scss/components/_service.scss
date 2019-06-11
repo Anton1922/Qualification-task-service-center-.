@@ -29,6 +29,10 @@
       background-image: url("../images/arrow-down-hover-cust.png");
     }
 
+    /*&:focus .service__arrow-icon {
+      transform: rotate(180deg);
+    }*/
+
   }
 
   &__subtitle {
@@ -143,7 +147,7 @@
     background-image: url("../images/background-desktop-hover.png");  
   }
 }
-/*
-.trans {
+
+.active {
   transform: rotate(180deg);
-}*/
+}
