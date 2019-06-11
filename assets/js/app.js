@@ -3,9 +3,10 @@ $(document).ready(function() {
 /*****************
 Accordion SERVICE
 *****************/
-
-  var $jsServiceDevice = $(".js-service-device");
-  var $jsServiceList = $(".js-service-list");
+  var $jsServiceDevice = $('.js-service-device');
+  var $jsServiceList = $('.js-service-list');
+  var $jsServiceArrow = $('.js-service-arrow');
+  var jsServiceArrowIcon = $('.js-service-arrow-icon');
 
   $jsServiceDevice.click(function(e) {
     
@@ -16,6 +17,7 @@ Accordion SERVICE
     if ($this.next().hasClass('show')) {
         $this.next().removeClass('show');
         $this.next().slideUp(350);
+        $
     } else {
         $this.parent().parent().find($jsServiceList).removeClass('show');
         $this.parent().parent().find($jsServiceList).slideUp(350);
@@ -25,19 +27,23 @@ Accordion SERVICE
 
   });
 
+/***********************
+Rotate Arrow in SERVICE
+***********************/
 
-  /*$jsServiceDevice.click(function(e) {
-    
+  $jsServiceDevice.click(function(e) {
+
     e.preventDefault();
 
     let $this = $(this);
 
-    $this.next('.service__arrow').toggleClass('trans');
-
-    if ($('.service__arrow').hasClass('trans')) {
-      $this.next('.service__arrow-icon').css('abc', 'rotate(180deg)');
+    if ($this.children().children(jsServiceArrowIcon).hasClass('active')) {
+      $this.children().children(jsServiceArrowIcon).removeClass('active');
+    } else { 
+      $this.parent().parent().find(jsServiceArrowIcon).removeClass('active');
+      $this.children().children(jsServiceArrowIcon).toggleClass('active');
     }
 
-  });*/
+  });
 
 });
