@@ -755,7 +755,10 @@ li {
     height: 100%;
     font-size: 16px;
     line-height: 1.25;
-    color: #fff; }
+    color: #fff;
+    /*&:focus .service__arrow-icon {
+      transform: rotate(180deg);
+    }*/ }
     .service__device:hover .service__arrow-icon {
       background-image: url("../images/arrow-down-hover-cust.png"); }
   .service__subtitle {
@@ -850,10 +853,11 @@ li {
   .desktop:hover {
     background-image: url("../images/background-desktop-hover.png"); }
 
-/*
-.trans {
-  transform: rotate(180deg);
-}*/
+.active {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
