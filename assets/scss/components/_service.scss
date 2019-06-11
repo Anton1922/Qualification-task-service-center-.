@@ -1,0 +1,149 @@
+.service {
+  margin: 0 auto;
+  padding-top: 45px;
+  max-width: 970px;
+
+  &__title {
+    margin: 0 0 40px 0;
+    text-align: center;
+    font-size: 30px;
+    color: $black-service;
+  }
+
+  &__filter {
+    margin-bottom: 5px;
+    background-color: $green-service;
+  }
+
+  &__device {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $white;
+
+    &:hover .service__arrow-icon {
+      background-image: url("../images/arrow-down-hover-cust.png");
+    }
+
+  }
+
+  &__subtitle {
+    width: 55%;
+  }
+
+  &__time {
+    width: 25%;
+    text-align: left;
+  }
+
+  &__arrow {
+    margin-top: 5px;
+    width: 10%;
+    
+    &-icon {
+      margin: auto 30px auto auto;
+      width: 23px;
+      height: 17px;
+      background-image: url("../images/arrow-down-cust.png");
+      transition: background .5s ease;
+    }
+  }
+
+  &__list {
+    display: none;
+    margin-bottom: 5px;
+    background-color: $white;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+    transition: background .5s ease;
+
+    div:nth-of-type(even) {
+      background-color: $grey-light-service;
+
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+
+    &:hover {
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    &-type {
+      width: 55%;
+      text-align: left;
+      color: $black-service;
+    }
+
+    &-time {
+      width: 12%;
+      text-align: left;
+      color: $green-service;
+    }
+
+    &-price {
+      width: 10%;
+      text-align: center;
+      color: $green-service;
+    }
+
+    &-appointment {
+      width: 10%;
+      text-align: center;
+      color: $blau-service;
+    }
+  }
+}
+
+.mobile {
+  background-image: url("../images/background-mobile.png");
+  transition: background .5s ease;
+  
+  &:hover {
+    background-image: url("../images/background-mobile-hover.png");
+  }
+
+  
+}
+
+.tablet {
+  background-image: url("../images/background-tablet.png");
+  transition: background .5s ease;
+
+  &:hover {
+    background-image: url("../images/background-tablet-hover.png");
+  }
+}
+
+.laptop {
+  background-image: url("../images/background-laptop.png");
+  transition: background .5s ease;
+
+  &:hover {
+    background-image: url("../images/background-laptop-hover.png");
+   }
+}
+
+.desktop {
+  background-image: url("../images/background-desktop.png");
+  background-position: 0 0;
+  transition: background .5s ease;
+
+  &:hover {
+    background-image: url("../images/background-desktop-hover.png");  
+  }
+}
+/*
+.trans {
+  transform: rotate(180deg);
+}*/

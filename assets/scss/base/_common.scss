@@ -1,0 +1,38 @@
+html, body {
+  //-webkit-text-size-adjust: none;
+
+  //font-size: $baseFontSize;
+  //font-family: $default;
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+select {
+  outline: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
