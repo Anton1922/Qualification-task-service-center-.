@@ -117,7 +117,7 @@
     }
   });
   /***********************
-  Rotate Arrow in SERVICE
+   Rotate Arrow in SERVICE
   ***********************/
 
   $jsServiceDevice.click(function (e) {
@@ -130,6 +130,29 @@
       $this.parent().parent().find(jsServiceArrowIcon).removeClass('active');
       $this.children().children(jsServiceArrowIcon).toggleClass('active');
     }
+  });
+  /***********************
+   Mobile/Tablet Menu
+  ***********************/
+
+  /******
+   OPEN
+  ******/
+
+  var $jsNavButton = $('.js-navigation-button');
+  var $jsHiddenMenu = $('.js-hidden-menu');
+  var $jsNavButtonClose = $('.js-navigation-button--close');
+  $jsNavButton.click(function (e) {
+    e.preventDefault();
+    $jsHiddenMenu.css('display', 'block');
+  });
+  /******
+   CLOSE
+  ******/
+
+  $jsNavButtonClose.click(function (e) {
+    e.preventDefault();
+    $jsHiddenMenu.css('display', 'none');
   });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
