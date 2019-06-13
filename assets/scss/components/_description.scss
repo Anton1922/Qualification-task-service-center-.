@@ -98,11 +98,23 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     bottom: 55px;
     right: -40px;
+    width: 40px;
+    height: 175px;
 
     @media screen and (min-width: 970px) and (max-width: 1078px) {
       right: 5px;
+    }
+
+    @media screen and (max-width: 969px) {
+      bottom: 15px;
+      left: calc(50% - 90px);
+      flex-direction: row;
+      width: 180px;
+      height: 40px;
     }
 
     &-vk {
@@ -116,7 +128,7 @@
     }
 
     &-insta {
-      margin-top: 5px;
+      //margin-top: 5px;
       background-image: url("../images/insta.png");
       opacity: .75;
       transition: opacity 0.3s ease;
@@ -127,7 +139,7 @@
     }
 
     &-ok {
-      margin-top: 5px;
+      //margin-top: 5px;
       background-image: url("../images/ok.png");
       opacity: .75;
       transition: opacity 0.3s ease;
@@ -138,7 +150,7 @@
     }
 
     &-fb {
-      margin-top: 5px;
+      //margin-top: 5px;
       background-image: url("../images/fb.png");
       opacity: .75;
       transition: opacity 0.3s ease;
