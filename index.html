@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Услуги по ремонту цифровой техники любой сложности в центре Челябинска по низким ценам с гарантией. Ремонтируем телефоны, планшеты, компьютеры, ноутбуки"/>
-  <meta name="keywords" content=""/>
+  <meta name="keywords" content="Сервис, центр, срочно, ремонт, услуги, челябинск, ноутбук, планшет, смартфон, телефон, компьютер, цены, прайс"/>
 
   <title>Mobiup | Сервисный центр по ремонту цифровой техники</title>
 
@@ -19,6 +19,14 @@
 <body>
 
   <div class="wrapper">
+
+    <div class="wrapper__image wrapper__image-up background">
+      
+    </div>
+
+    <div class="wrapper__image wrapper__image-down background">
+      
+    </div>
 
     <!-- NAVIGATION START-->
     <nav class="navigation">
@@ -51,12 +59,34 @@
               <div class="navigation__select-arrow"></div>
             </div>
 
-            <ul class="navigation__select-list">
-              <li class="navigation__select-item">Усуги и цены</li>
-              <li class="navigation__select-item">Акции</li>
-              <li class="navigation__select-item">Отзывы</li>
-              <li class="navigation__select-item">О нас</li>
-              <li class="navigation__select-item">Контакты</li>
+            <div class="navigation__select-button js-navigation-button">
+              <div class="navigation__select-button-line"></div>
+              <div class="navigation__select-button-line"></div>
+              <div class="navigation__select-button-line"></div>
+            </div>
+
+            <ul class="navigation__select-list js-hidden-menu">
+              <li class="navigation__select-item navigation__select-item--close">
+                <div class="navigation__select-button navigation__select-button--close js-navigation-button--close">
+                  <div class="navigation__select-button-line navigation__select-button-cross--first"></div>
+                  <div class="navigation__select-button-line navigation__select-button-cross--second"></div>
+                </div>
+              </li>
+              <li class="navigation__select-item">
+                <a class="navigation__select-link" href="#">Усуги и цены</a>
+              </li>
+              <li class="navigation__select-item">
+                <a class="navigation__select-link" href="#">Акции</a>
+              </li>
+              <li class="navigation__select-item">
+                <a class="navigation__select-link" href="#">Отзывы</a>
+              </li>
+              <li class="navigation__select-item">
+                <a class="navigation__select-link" href="#">О нас</a>
+              </li>
+              <li class="navigation__select-item">
+                <a class="navigation__select-link" href="#">Контакты</a>
+              </li>
             </ul>
           </div>
 
@@ -136,17 +166,15 @@
             <p class="description__text-discount">Скидка 10% на услуги для всех записавшихся с сайта</p>
           </div>
         </div>
-
+        <!-- SOCIAL ICONS START-->
         <div class="description__social">
-          <a class="description__social-vk social-size" href="https://vk.com/" target="_blank"></a>
-          <a class="description__social-insta social-size" href="https://www.instagram.com/" target="_blank"></a>
-          <a class="description__social-ok social-size" href="https://ok.ru/" target="_blank"></a>
-          <a class="description__social-fb social-size" href="https://www.facebook.com/" target="_blank"></a>
+          <a class="description__social-vk social-size background" href="https://vk.com/" target="_blank"></a>
+          <a class="description__social-insta social-size background" href="https://www.instagram.com/" target="_blank"></a>
+          <a class="description__social-ok social-size background-color" href="https://ok.ru/" target="_blank"></a>
+          <a class="description__social-fb social-size background" href="https://www.facebook.com/" target="_blank"></a>
         </div>
-
+        <!-- SOCIAL ICONS END-->
       </div>
-
-      
 
     </section>
     <!-- DESCRIPTION SECTION END-->
@@ -158,7 +186,8 @@
       <h2 class="service__title">Прайс на услуги по ремонту</h2>
 
       <ul class="service__menu">
-        <li class="service__filter">
+
+        <li class="service__filter"> <!-- SMARTPHONE -->
           <a class="service__device mobile background js-service-device" href="#">
             <h2 class="service__subtitle">Ремонт смартфонов</h2>
             <p class="service__time">От 5 минут</p>
@@ -200,7 +229,7 @@
           </div>
         </li>
 
-        <li class="service__filter">
+        <li class="service__filter"> <!-- TABLET -->
           <a class="service__device tablet background js-service-device" href="#">
             <h2 class="service__subtitle">Ремонт планшетов</h2>
             <p class="service__time">От 10 минут</p>
@@ -242,7 +271,7 @@
           </div>
         </li>
 
-        <li class="service__filter">
+        <li class="service__filter"> <!-- NOTEBOOK -->
           <a class="service__device laptop background js-service-device" href="#">
             <h2 class="service__subtitle">Ремонт ноутбуков</h2>
             <p class="service__time">От 10 минут</p>
@@ -284,7 +313,7 @@
           </div>
         </li>
 
-        <li class="service__filter">
+        <li class="service__filter"> <!-- DESKTOP -->
           <a class="service__device desktop background js-service-device" href=#>
             <h2 class="service__subtitle">Ремонт комьютеров</h2>
             <p class="service__time">От 10 минут</p>
@@ -331,7 +360,7 @@
     <!-- SERVICE SECTION END -->
 
     <!-- FOOTER START -->
-    <footer>Anton Fedorov</footer>
+    <footer></footer>
     
   </div>
 
