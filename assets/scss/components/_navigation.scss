@@ -4,16 +4,17 @@
   left: 0;
   z-index: 500;
   width: 100%;
+  max-width: 100%;
   font-size: 16px;
   background-color: $white-navigation-75;
-  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.08); 
+  box-shadow: 0px 6px 20px 0px $shadow-navigation; 
 
   @media screen and (max-width: 490px) {
     background-color: $white;
   }
 
-  @media screen and (max-width: 365px) {
-    //flex-wrap: wrap;
+  @media screen and (max-width: 490px) {
+    width: 320px;
   }
 
   &__container {
@@ -22,8 +23,10 @@
     margin: 0 auto;
     max-width: 970px;
 
-    @media screen and (max-width: 365px) {
-      flex-wrap: wrap;
+    @media screen and (max-width: 768px) {
+      //flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
@@ -36,24 +39,20 @@
       margin-left: 15px;
     }
 
-    @media screen and (max-width: 365px) {
-      margin: 0 auto;
-      width: 100%;
+    @media screen and (max-width: 768px) {
+      width: 22px;
+      margin: 0 auto 0 15px;
     }
   }
 
   &__select {
-    position: relative;
     color: $blue-menu;
     cursor: pointer;
-
-    @media screen and (max-width: 365px) {
-      margin-left: 25px;
-    }
 
     &-container {
       display: flex;
       width: 100%;
+      max-width: 100%;
       height: 100%;
 
       @media screen and (max-width: 768px) {
@@ -86,84 +85,56 @@
       }
     }
 
+/*************
+BUTTON BURGER
+**************/
     &-button {
       display: none;
       flex-direction: column;
       justify-content: space-around;
-      margin: 1.5px auto;
-      width: 50px;
-      height: 50px;
-      //border: 1px solid $blue-menu;
+      width: 22px;
+      height: 22px;
       background-color: $white;
-      transition: border-color .3s ease;
+      cursor: pointer;
 
       @media screen and (max-width: 768px) {
         display: flex;
       }
 
-      &:hover {
-        border-color: $blue-menu-hover;
-      }
-
-      &:hover .navigation__select-button-line {
-        background-color: $blue-menu-hover;
-      }
-
-
       &-line {
         margin: 0 auto;
-        width: 45px;
-        height: 5px;
+        width: 22px;
+        height: 3px;
         background-color: $blue-menu;
         transition: background-color .3s ease;
       }
 
       &--close {
-        position: relative;
+        position: absolute;
+        top: 42px;
+        left: 15px;
         margin: auto auto auto 0;
-        //border: 1px solid $blue-menu;
         background-color: $white;
-        transition: border-color .3s ease;
 
-        &:hover {
-          border-color: $blue-menu-hover;
+        & .navigation__select-button-line {
+          background-color: $gray-menu;
         }
-      }
-
-      &-cross--first {
-        position: absolute;
-        top: 0;
-        left: calc(50% - 2.5px);
-        z-index: 1;
-        margin: auto;
-        height: 50px;
-        width: 5px;
-        transform-origin: center center;
-        transform: rotate(45deg);
-      }
-
-      &-cross--second {
-        position: absolute;
-        top: 0;
-        left: calc(50% - 2.5px);
-        z-index: 2;
-        margin: auto;
-        height: 50px;
-        width: 5px;
-        transform-origin: center center;
-        transform: rotate(-45deg);
       }
     }
 
+/*************
+HIDDEN MENU
+**************/
 
     &-list {
       display: none;
       //display: block;
-      position: absolute;
+      position: fixed;
       top: 0;
-      left: -15px;
+      left: 0;
       margin: 0;
-      width: 320px;
+      padding-top: 70px;
+      width: 100vw;
       height: 300px;
       font-size: 24px;
       background-color: $white;
@@ -171,10 +142,6 @@
 
     &-item {
       margin: 15px auto 15px 25px;
-
-      &--close {
-        margin-top: 1.5px;
-      }
     }
 
     &-link {
@@ -187,6 +154,10 @@
     }
 
   }
+
+/*************
+MENU
+**************/
 
   &__list {
     display: flex;
@@ -209,6 +180,9 @@
     }
   }
 
+/*************
+BUTTON
+**************/
 
   &__button {
     display: flex;
@@ -223,8 +197,8 @@
       margin-right: 15px;
     }
 
-    @media screen and (max-width: 365px) {
-      margin: 25px auto 10px auto;
+    @media screen and (max-width: 768px) {
+      margin: 25px 15px 25px auto;
     }
 
     &:hover {
@@ -245,5 +219,11 @@
   }
 }
 
+/***************************************
+CHANGE NAVIGATION BACKGROUND WITH SCROLL
+****************************************/
 
+.scroll-background {
+  background-color: $white;
+}
 
