@@ -4,10 +4,6 @@
 //Normalize
 @import "helpers/normalize";
 
-// Vendor
-//@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
-//@import "~select2/dist/css/select2";
-
 // Fonts
 @import "base/fonts";
 
@@ -19,6 +15,7 @@
 @import "components/navigation";
 @import "components/description";
 @import "components/service";
+@import "components/arrow";
 
 //Layout
 @import "layout/header";
