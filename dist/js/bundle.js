@@ -95,7 +95,7 @@
 
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
   /*****************
-  Accordion SERVICE
+  ACCORDION SERVICE
   *****************/
   var $jsServiceDevice = $('.js-service-device');
   var $jsServiceList = $('.js-service-list');
@@ -117,7 +117,7 @@
     }
   });
   /***********************
-   Rotate Arrow in SERVICE
+  ROTATE ARROW IN SERVICE
   ***********************/
 
   $jsServiceDevice.click(function (e) {
@@ -132,12 +132,9 @@
     }
   });
   /***********************
-   Mobile/Tablet Menu
+   MOBILE/TABLET MENU
   ***********************/
-
-  /******
-   OPEN
-  ******/
+  //OPEN
 
   var $jsNavButton = $('.js-navigation-button');
   var $jsHiddenMenu = $('.js-hidden-menu');
@@ -145,15 +142,55 @@
   $jsNavButton.click(function (e) {
     e.preventDefault();
     $jsHiddenMenu.css('display', 'block');
-  });
-  /******
-   CLOSE
-  ******/
+    /*if ($jsHiddenMenu.hasClass('show')) {
+      $jsHiddenMenu.removeClass('show');
+      $jsHiddenMenu.hide();
+    } else {
+        $jsHiddenMenu.addClass('show');
+        $jsHiddenMenu.show();
+    }*/
+  }); //CLOSE
 
   $jsNavButtonClose.click(function (e) {
     e.preventDefault();
     $jsHiddenMenu.css('display', 'none');
   });
+  /********************************************
+  CHANGE NAVIGATION BACKGROUND WITH PAGE SCROLL
+  *********************************************/
+
+  var $jsNavigation = $('.js-navigation');
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 10) {
+      $jsNavigation.addClass("scroll-background");
+    } else {
+      $jsNavigation.removeClass("scroll-background");
+    }
+  });
+  /********
+  ARROW UP
+  *********/
+
+  var $jsArrowUp = $('.js-arrow-up'); //SHOW/HIDE BY SCROLL
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 495) {
+      $jsArrowUp.fadeIn(200);
+    } else {
+      $jsArrowUp.fadeOut(200);
+    }
+  }); //UP BY CLICK
+
+  $jsArrowUp.click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+  });
+  /********
+  PARALLAX
+  *********/
+  //var scene = document.getElementById('scene');
+  //var parallaxInstance = new Parallax(scene);
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
@@ -175,6 +212,7 @@ __webpack_require__.r(__webpack_exports__);
 //import '@babel/polyfill';
 
 window.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //import 'bootstrap';
+//import parallax.min.js from 'parallax-js';
 
 
 
