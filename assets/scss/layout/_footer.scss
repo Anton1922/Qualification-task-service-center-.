@@ -1,71 +1,14 @@
 .footer {
-  background: $white;
-  border-top: rem(1px) solid $gray;
-  padding-top: rem(40px);
-  padding-bottom: rem(40px);
-
-  /*@media screen and (max-width: 1439px) {
-    width: 1420px;
-  }*/
-
-  &--auth {
-    padding-top: rem(30px);
-    padding-bottom: rem(30px);
-  }
-
-  &__nav {
-
-    &--without-header {
-      padding-top: rem(40px);
-    }
-
-    &-header {
-      line-height: 1;
-      font-family: 'Futura New Book', $default;
-      font-style: normal;
-      font-weight: normal;
-      font-size: rem(21px);
-      margin-bottom: rem(20px);
-    }
-
-    &-list {
-      margin: 0;
-      padding: 0;
-      display: block;
-
-      &-item {
-        display: block;
-        margin-bottom: rem(15px);
-
-        &-link {
-
-        }
-      }
-    }
-  }
+  margin-top: 50px;
+  width: 100%;
+  background-color: $white;
+  color: $blue-menu;
+  font-family: $Anton;
+  font-weight: bold;
+  box-shadow: 6px 0px 20px 0px $shadow-navigation; 
 
   &__text {
-    font-family: 'Futura New Book', $default;
-    line-height: rem(23px);
-    font-size: rem(17px);
-    color: $gray-dark;
-
-    &--logo {
-      min-width: rem(300px);
-      text-align: right;
-    }
-  }
-
-  &__logo {
-    width: auto;
-    height: rem(12px);
-
-    &-link {
-      vertical-align: text-bottom;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
+    margin: 0;
+    padding: 15px;
   }
 }
