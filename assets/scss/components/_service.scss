@@ -1,4 +1,5 @@
 .service {
+  position: relative;
   margin: 0 auto 50px auto;
   padding-top: 45px;
   max-width: 970px;
@@ -7,6 +8,10 @@
     margin-left: 15px;
     margin-right: 15px;
   }
+
+/*************
+SERVICE TITLE
+**************/
 
   &__title {
     margin: 0 0 40px 0;
@@ -122,6 +127,10 @@
     }
   }
 
+/*************
+HIDE LIST
+**************/
+
   &__list {
     display: none;
     margin-bottom: 5px;
@@ -227,6 +236,10 @@
   }
 }
 
+/*******************
+SERVICE BACKGROUNDS
+********************/
+
 .mobile {
   background-image: url("../images/background-mobile.png");
   transition: background .5s ease;
@@ -262,6 +275,10 @@
     background-image: url("../images/background-desktop-hover.png");  
   }
 }
+
+/*********************
+CLASS FOR ACTIVE ARROW
+**********************/
 
 .active {
   transform: rotate(180deg);
