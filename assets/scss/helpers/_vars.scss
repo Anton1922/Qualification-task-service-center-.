@@ -34,7 +34,8 @@ $orange: #ED6637;
 $blue-btn: #65b4ef;
 $blue-btn-hover: #518ebd;
 $blue-menu: #65b4ef;
-$blue-menu-hover: #518ebd; 
+$blue-menu-hover: #518ebd;
+$gray-menu: #b9b9b9; 
 $grey-header: #5b5b5b;
 $blue-header-hover: #5290bf;
 $blue-header-border: #67b6f1;
@@ -46,8 +47,9 @@ $grey-light-service: #f8f8f8;
 $black-service: #242424;
 $green-service: #60a564;
 $blau-service: #61ace5;
-$black-service-shadow10: rgba(0, 0, 0, 0.1);
+$black-service-shadow10: rgba($white, 0.1);
 $white-navigation-75: rgba($white, .75);
+$shadow-navigation: rgba($black, 0.08);
 
 //fonts
 $default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -55,4 +57,6 @@ $default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue
 $futuraBook: 'Futura New Book', $default;
 $futuraDemi: 'Futura New Demi', $default;
 $futuraNew: 'Futura New', $default;
+$PTSans: 'PT Sans', sans-serif, $default;
+$Anton: 'Anton', sans-serif, $default;
 
