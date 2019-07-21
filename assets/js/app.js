@@ -106,7 +106,7 @@ CHANGE NAVIGATION BACKGROUND WITH PAGE SCROLL
 
   $(window).scroll(function() {
 
-    if($(window).scrollTop() > 495) {
+    if($(window).scrollTop() > 300) {
         $jsArrowUp.fadeIn(200);
     } else {
        $jsArrowUp.fadeOut(200);
@@ -117,7 +117,7 @@ CHANGE NAVIGATION BACKGROUND WITH PAGE SCROLL
 
   $jsArrowUp.click(function() {
  
-    $('body,html').animate({scrollTop: 0}, 800);
+    $('body,html').animate({scrollTop: 0}, 1000);
  
   });
 

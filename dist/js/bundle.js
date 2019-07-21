@@ -174,7 +174,7 @@
   var $jsArrowUp = $('.js-arrow-up'); //SHOW/HIDE BY SCROLL
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 495) {
+    if ($(window).scrollTop() > 300) {
       $jsArrowUp.fadeIn(200);
     } else {
       $jsArrowUp.fadeOut(200);
@@ -184,7 +184,7 @@
   $jsArrowUp.click(function () {
     $('body,html').animate({
       scrollTop: 0
-    }, 800);
+    }, 1000);
   });
   /********
   PARALLAX
